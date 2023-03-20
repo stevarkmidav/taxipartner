@@ -1,0 +1,121 @@
+header {
+    position: relative;
+    height: 50px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #212121;
+    z-index: 5;
+}
+
+.hamburger {
+    display: none;
+}
+
+.menu {
+    max-width: 1040px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 70px;
+    margin: 0 auto;
+    list-style-type: none;
+    &__item {
+        border-right: 2px dotted rgba(254, 254, 254, 0.407);
+        padding-right: 11%;
+        margin: 0 ;
+        &:last-child {
+            border-right: none;
+            padding: 0;
+        }
+    }
+    &__link {
+        color: rgba(255, 255, 255, .85);
+        font-size: 15px;
+        font-weight: 300;
+        text-decoration: none;
+        transition: 0.3s all;
+        &:hover {
+            color: #1eacc7;
+        }
+    }
+}
+
+.subheader {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 140px;
+        margin-bottom: 10px;
+    }
+    &__logo {
+        &__items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        &__descr {
+            margin-top: 6px;
+            color: rgba(255, 255, 255, .7);
+            font-size: 18px;
+            font-weight: 400;
+        }
+        &__item {
+            max-height: 85px; 
+            border-radius: 8px;
+            margin-right: 5px;
+        }
+    }
+    &__contact {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__call {
+        font-size: 14px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, .85);
+        margin-top: 5px;
+    }
+    &__number {
+        display: block;
+        margin-top: 10px;
+        color: rgba(255, 255, 255, .85);
+        font-size: 22px;
+        font-weight: 400;
+        text-decoration: none;
+        transition: 0.3s all;
+        &:hover {
+            color: #1eacc7;
+        }
+    }
+    &__btn {
+        margin-top: 10px;
+        width: 172px;
+        height: 46px;
+        box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+        border: none;
+        border-radius: 5px;
+        background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            filter: brightness(.9);
+        }
+    }
+}

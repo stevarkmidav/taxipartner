@@ -1,0 +1,136 @@
+.communication {
+    background: #131313;
+    padding: 55px 0 100px 0;
+    &__header {
+        position: relative;
+        margin-bottom: 0;
+        margin-top: 40px;
+        font-weight: 700;
+        color: rgba(255,255,255,.95);
+        font-size: 38px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__wrapper {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .form {
+        &__header {
+            color: rgba(255,255,255,.95);
+            font-size: 20px;
+            font-weight: 300;
+            text-transform: uppercase;
+            line-height: 1.4em;
+            letter-spacing: 5px;
+        }
+        &__questions {
+            margin-top: 10px;
+            display: grid;
+            grid-template-rows: 55px 55px 159px 55px ;
+            grid-template-columns: 500px;
+            row-gap: 15px;
+            input, textarea {
+                font-size: 18px;
+                font-weight: 300;
+                letter-spacing: .5px;
+                border: 1px solid rgba(254,254,254,.407);
+                background-color: #131313;
+                border-radius: 7px;
+                padding: 20px;
+                color: rgba(254,254,254,.407);
+                resize: none;
+                transition: .5s all;
+                &:focus {
+                    outline: none;
+                    border: 1px solid rgba(254, 254, 254, 0.832);
+                }
+            }
+        }
+        &__btn {
+            box-shadow: inset 0 -4px 0 rgba(0,0,0,.12);
+            border: none;
+            border-radius: 7px;
+            background-image: linear-gradient(to top,#1eacc7 0,#4ce2ff 100%);
+            text-shadow: 1px 1px 0 rgba(0,0,0,.21);
+            color: #fff;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all .3s;
+            &:hover {
+                filter: brightness(.9);
+            }
+        }
+    }
+    .contacts {
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        &__list {
+            &__item {
+                list-style-type: none;
+                margin-bottom: 40px;
+            }
+            &__link {
+                position: relative;
+                margin-left: 50px;
+                color: rgba(255,255,255,.95);
+                text-decoration: none;
+                font-weight: 300;
+                font-size: 20px;
+                transition: .3s all;
+                &:hover {
+                    color: #1eacc7;
+                }
+                &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        left: -43px;
+                        top: 0;
+                        width: 25px;
+                        height: 25px;
+                        filter: invert(100%);
+                    }
+                &_adress {
+                    &::before {
+                        background: url(../icons/location.png) center (center/cover) no-repeat;
+                    }
+                }
+                &_phone {
+                    &::before {
+                        background: url(../icons/telephone.png) center (center/cover) no-repeat;
+                    }
+                }
+                &_email {
+                    &::before {
+                        background: url(../icons/email.png) center (center/cover) no-repeat;
+                    }
+                }
+            }
+        }
+        &__link {
+            &__facebook {
+                display: flex;
+                align-items: center;
+                color: rgba(255,255,255,.95);
+                text-decoration: none;
+                font-weight: 300;
+                font-size: 20px;
+                transition: .3s all;
+                &:hover {
+                    color: #1eacc7;
+                }
+                img {
+                    width: 30px;
+                    height: auto;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

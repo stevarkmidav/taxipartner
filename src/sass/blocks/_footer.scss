@@ -1,0 +1,29 @@
+.footer {
+    background: #939393;
+    &__logo {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0 15px 0;
+        &__item {
+            max-height: 90px;
+            border-radius: 8px;
+            margin-right: 5px;
+        }
+    }
+    &__designer {
+        display: block;
+        text-decoration: none;
+        color: rgba(255,255,255,.95);
+        font-weight: 300;
+        font-size: 13px;
+        text-align: right;
+        margin-right: 30px;
+        padding-bottom: 10px;
+        transition: .3s all;
+        &:hover {
+            color: #1eacc7;
+        }
+    }
+}
