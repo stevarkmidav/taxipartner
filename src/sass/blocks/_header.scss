@@ -55,7 +55,7 @@ nav {
             left: 100%;
             transform: translate(-100%, -50%);  
             text-decoration: none;
-            width: 55px;
+            width: 45px;
             &:hover {
                 .menu__language {
                     &__type {
@@ -69,13 +69,13 @@ nav {
         }
         &__type {
             color: rgba(255,255,255,.7);
-            font-size: 25px;
+            font-size: 17px;
             font-weight: 300;
             transition: .3s all;
         }
         &__flag {
-            width: 15px;
-            height: 15px;
+            width: 13px;
+            height: 13px;
             border-radius: 100%;
             transition: .2s all;
         }
