@@ -34,6 +34,9 @@ section {
         background-color: #fff;
         color: #000;
     }
+    &_pl {
+        width: 170px;
+    }
 }
 
 @import 'blocks/header';
