@@ -7,6 +7,7 @@ error_reporting(E_ALL);
 $email = $_POST['email'];
 $phone = $_POST['phone'];
 $text = $_POST['text'];
+$city = $_POST['city'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -30,6 +31,7 @@ $mail->Body    = '
 		User send question <br> 
 	Email: ' . $email . '<br>
 	Phone: ' . $phone . ' <br>
+  City: ' . $city . ' <br>
 	Question: ' . $text . '';
 
 if(!$mail->send()) {

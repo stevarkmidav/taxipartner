@@ -7,6 +7,7 @@ error_reporting(E_ALL);
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
+$city = $_POST['city'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -29,8 +30,9 @@ $mail->Subject = 'TaxiPartner request';
 $mail->Body    = '
 		User send request <br> 
 	Name: ' . $name . ' <br>
-	Email: ' . $email . '<br>
-	Phone: ' . $phone . ' <br>';
+	Email: ' . $email . ' <br>
+	Phone: ' . $phone . ' <br>
+  City: ' . $city . '';
 
 if(!$mail->send()) {
     return false;

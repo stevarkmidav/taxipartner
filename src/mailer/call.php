@@ -5,6 +5,7 @@ error_reporting(E_ALL);
   @ini_set('display_startup_errors', 1);
 
 $phone = $_POST['phone'];
+$city = $_POST['city'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -25,7 +26,8 @@ $mail->isHTML(true);
 $mail->Subject = 'TaxiPartner callback';
 $mail->Body    = '
 		User send phone for callback <br> 
-	Phone: ' . $phone . '';
+	Phone: ' . $phone . ' <br>
+  City: ' . $city . '';
 
 if(!$mail->send()) {
     return false;
