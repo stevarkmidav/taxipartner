@@ -98,17 +98,17 @@
                     }
                 &_adress {
                     &::before {
-                        background: url(../icons/location.png) center (center/cover) no-repeat;
+                        background: url(../icon/location.png) center (center/cover) no-repeat;
                     }
                 }
                 &_phone {
                     &::before {
-                        background: url(../icons/telephone.png) center (center/cover) no-repeat;
+                        background: url(../icon/telephone.png) center (center/cover) no-repeat;
                     }
                 }
                 &_email {
                     &::before {
-                        background: url(../icons/email.png) center (center/cover) no-repeat;
+                        background: url(../icon/email.png) center (center/cover) no-repeat;
                     }
                 }
             }

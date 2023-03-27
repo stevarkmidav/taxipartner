@@ -45,13 +45,13 @@
                 top: 3px;
                 width: 21px;
                 height: 20px;
-                background: url(../icons/check_blue.svg) center (center/cover) no-repeat;
+                background: url(../icon/check_blue.svg) center (center/cover) no-repeat;
             }
         }
         &_red {
             li {
                 &:before {
-                    background: url(../icons/check_red.svg) center (center/cover) no-repeat;
+                    background: url(../icon/check_red.svg) center (center/cover) no-repeat;
                 }
             }
         }
