@@ -1,14 +1,17 @@
 <?php 
 
-error_reporting(E_ALL);
-  @ini_set('display_errors', 1);
-  @ini_set('display_startup_errors', 1);
+$phone = trim(strip_tags($_POST['phone']));
+$city = trim(strip_tags($_POST['city']));
 
-$phone = $_POST['phone'];
-$city = $_POST['city'];
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-require_once('phpmailer/PHPMailerAutoload.php');
-$mail = new PHPMailer;
+require __DIR__ . '/phpmailer/Exception.php';
+require __DIR__ . '/phpmailer/PHPMailer.php';
+require __DIR__ . '/phpmailer/SMTP.php';
+
+$mail = new PHPMailer(true);
+
 $mail->CharSet = 'utf-8';
 
 $mail->isSMTP();                                     
@@ -34,7 +37,7 @@ if(!$mail->send()) {
 } else {
     return true;
 }
-?>
+
 
 
 
